@@ -7,4 +7,16 @@ def countdown(num)
 end
 
 
-# countdown_with_sleep(snooze)
+def countdown_with_sleep(snooze)
+  now = Time.now
+  counter = 1
+  loop do
+    if Time.now < now + counter
+      next
+    else
+      puts "Counting another second..."
+    end
+    counter += 1
+    break if counter > snooze
+  end
+end
