@@ -14,7 +14,7 @@ def countdown_with_sleep(snooze)
     if Time.now < now + counter
       next
     else
-      puts "#{snooze}"
+      puts "Counting down..."
     end
     counter += 1
     break if counter > snooze
